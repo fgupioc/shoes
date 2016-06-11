@@ -13,6 +13,10 @@ class Locations extends Model
 
     public function user_detaill()
     {
-    	return $this->hasMany('shoes\Model\User_details');
+    	return $this->hasMany('shoes\Model\User_details','location_id');
+    }
+    
+    public function institution(){
+        return $this->hasMany('shoes\Model\Institution','location_id');
     }
 }

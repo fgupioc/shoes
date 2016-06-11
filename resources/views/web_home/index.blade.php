@@ -330,13 +330,6 @@
             pagination: false,
             navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>", "<span class='glyphicon glyphicon-chevron-right'></span>"]
         });
-        $("#owl-product2").owlCarousel({
-            autoPlay: true,
-            items: 3,
-            stopOnHover: true,
-            navigation: true,
-            pagination: false,
-            navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>", "<span class='glyphicon glyphicon-chevron-right'></span>"]
-        });
+        
     });
 </script>

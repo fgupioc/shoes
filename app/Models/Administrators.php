@@ -18,10 +18,13 @@ class Administrators extends Model
 	}
 
 	public function user(){
-		//return $this->belongsTo('shoes\User');
-		return $this->belongsTo('shoes\User', 'user_id');
-
+		return $this->belongsTo('shoes\User', 'user_id');		
 	}
-
+	public function administrator_store(){
+		return $this->hasMany('shoes\Models\Administrator_stores','administrator_id');
+	}
+	public function administrator_institution(){
+		return $this->hasMany('shoes\Models\Administrator_institutions','administrator_id');
+	}
 	
 }

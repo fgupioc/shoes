@@ -12,6 +12,6 @@ class Type_admins extends Model
 	protected $fillable = ['id','abreviado','name'];
 
 	public function administrator(){
-		return $this->hasone('shoes\Models\Administrators'.'type_admin_id');
+		return $this->hasone('shoes\Models\Administrators','type_admin_id');
 	}
 }
