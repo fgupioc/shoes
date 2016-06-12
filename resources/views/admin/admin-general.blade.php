@@ -31,7 +31,7 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i>Panel</a>
                 </li>
-                <li><a><i class="fa fa-university"></i>Instituciones</a>
+                <li><a href="{{route('institution_list')}}"><i class="fa fa-university"></i>Instituciones</a>
                 </li>
                 <li><a><i class="fa fa-users"></i>Administradores</a>
                 </li>

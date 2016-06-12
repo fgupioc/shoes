@@ -30,6 +30,9 @@ Route::group(['middlewareGroups' =>['web']], function(){
 	
 	Route::group( ['middleware' => ['auth','administrator','admin_gen']], function () {
 		Route::get('admin/instituciones', ['as'=> 'institution_list','uses'=>'Administrator\AdminGeneralController@institution_list']);
+		Route::get('admin/institucion/crear', ['as'=> 'institution_create','uses'=>'Administrator\AdminGeneralController@create']);
+		Route::post('admin/institucion/guardar',['as'=>'institution_save','uses'=>'Administrator\AdminGeneralController@save']);
+		Route::get('admin/institucion/{id}',['as'=>'institution_edit','uses'=>'Administrator\AdminGeneralController@edit']);
 	});
 
 
